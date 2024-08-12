@@ -30,7 +30,7 @@ const HeroContainer = styled.div`
 
 const Title = styled.div`
   font-weight: 700;
-  font-size: 50px;
+  font-size: 45px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
   margin-bottom: 8px;
@@ -43,7 +43,7 @@ const Title = styled.div`
 
 const TextLoop = styled.div`
   font-weight: 600;
-  font-size: 28px;
+  font-size: 18px;
   display: flex;
   gap: 12px;
   justify-content: center;
@@ -63,10 +63,11 @@ const Span = styled.div`
 `;
 
 const SubTitle = styled.div`
-  font-size: 20px;
+  font-size: 18px;
   line-height: 32px;
-  margin-bottom: 42px;
-  color: ${({ theme }) => theme.text_primary + 95};
+  margin: 3rem 0;
+  padding: 0px 40px;
+  color: ${({ theme }) => theme.text_primary};
 
   @media (max-width: 960px) {
     font-size: 16px;
@@ -112,7 +113,6 @@ const Hero = () => {
         <motion.div {...headContainerAnimation}>
           <motion.div {...headTextAnimation}>
             <TextLoop>
-              I am a
               <Span>
                 <Typewriter
                   options={{

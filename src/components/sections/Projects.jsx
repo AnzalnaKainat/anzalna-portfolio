@@ -208,7 +208,8 @@ const Title = styled.div`
 const Desc = styled.div`
   font-size: 18px;
   text-align: center;
-  font-weight: 600;
+  margin-bottom: 60px;
+  // font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
     font-size: 16px;
@@ -228,13 +229,8 @@ const Projects = ({ openModal, setOpenModal }) => {
     <Container id="Projects">
       <Wrapper>
         <Title>Projects</Title>
-        <Desc
-          style={{
-            marginBottom: "40px",
-          }}
-        >
-          I have worked on a wide range of projects. From web apps to android
-          apps. Here are some of my projects.
+        <Desc>
+          Explore some of my projects that demonstrate my frontend development skills. 
         </Desc>
         <CardContainer>
           {projects.map((project) => (

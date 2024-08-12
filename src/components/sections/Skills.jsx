@@ -11,6 +11,13 @@ position: relative;
 z-index: 1;
 margin-top: 3rem;
 align-items: center;
+@media (max-width: 960px) {
+  padding: 66px 16px;
+}
+
+@media (max-width: 640px) {
+  padding: 32px 16px;
+}
 `;
 const Wrapper = styled.div`
   position: relative;
@@ -41,7 +48,8 @@ const Title = styled.div`
 const Desc = styled.div`
   font-size: 18px;
   text-align: center;
-  font-weight: 600;
+  margin-bottom: 40px;
+  // font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
     font-size: 16px;
@@ -123,13 +131,8 @@ const Skills = () => {
     <Container id="Skills">
       <Wrapper>
         <Title>Skills</Title>
-        <Desc
-          style={{
-            marginBottom: "40px",
-          }}
-        >
-          Here are some of my skills on which I have been working on for the
-          past 3 years.
+        <Desc>
+          Here are some of the skills I have developed and refined
         </Desc>
 
         <SkillsContainer>

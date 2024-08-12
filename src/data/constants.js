@@ -7,7 +7,7 @@ export const Bio = {
     // "UI/UX Designer", 
   ],
   description:
-    "A skilled Frontend developer with a solid foundation in web technologies and a dedication to continuous learnind",
+    "A skilled Frontend Developer with a solid foundation in web technologies and a strong understanding of computer science principles, I am dedicated to crafting efficient and user-friendly digital solutions and have a commitment to continuously learning and improving my skills.",
   github: "https://github.com/AnzalnaKainat",
   resume: "https://drive.google.com/file/d/1iXei4ETGu4N3vObwq7pezZUtBHMX1cE_/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/anzalna-kainat-4973922b5/",

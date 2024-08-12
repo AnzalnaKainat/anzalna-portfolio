@@ -32,13 +32,13 @@ const FooterWrapper = styled.div`
 
     
   h1 {
-    font-size: 2.5rem; 
-    font-weight: 700;
+    font-size: 45px; 
+    padding: 0rem 7rem;
     margin-bottom: 2rem; 
   }
 
-  h6 {
-    font-size: 1rem; 
+  div {
+    font-size: 18px; 
     margin-bottom: 2rem; 
   }
 `;
@@ -141,10 +141,10 @@ const Footer = () => {
         <h1>
           Ready to take your digital presence to the next level?
         </h1>
-        <h6>
+        <div>
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
-        </h6>
+        </div>
         
         <EmailButton href="mailto:anzalnakainat@gmail.com" target="_blank">
             Let's get in touch <FaLocationArrow />
