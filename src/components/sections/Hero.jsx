@@ -8,7 +8,6 @@ import {
   headContentAnimation,
   headTextAnimation,
 } from "../../utils/motion";
-import StarCanvas from "../canvas/Stars";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -17,7 +16,7 @@ const HeroContainer = styled.div`
   justify-content: center;
   position: relative;
   padding: 80px 30px;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
 
   @media (max-width: 960px) {
@@ -58,7 +57,6 @@ const TextLoop = styled.div`
   }
 `;
 
-
 const Span = styled.div`
   cursor: pointer;
   color: ${({ theme }) => theme.primary};
@@ -87,7 +85,7 @@ const ResumeButton = styled.a`
   text-align: center;
   padding: 16px 0;
 
-  background: #008080;
+  background: ${({ theme }) => theme.text_primary};
   background: linear-gradient(225deg, #008080, #f5f5dc);
   border-radius: 50px;
   font-weight: 600;
@@ -106,28 +104,10 @@ const ResumeButton = styled.a`
   color: white;
 `;
 
-const HeroBg = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-
-  @media (max-width: 960px) {
-    justify-content: center;
-  }
-`;
-
 const Hero = () => {
   return (
     <div id="About">
       <HeroContainer>
-        <HeroBg>
-          <StarCanvas />
-        </HeroBg>
 
         <motion.div {...headContainerAnimation}>
           <motion.div {...headTextAnimation}>
