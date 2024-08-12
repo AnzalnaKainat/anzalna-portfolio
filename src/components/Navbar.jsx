@@ -93,7 +93,7 @@ const GithubButton = styled.a`
   text-decoration: none;
   &:hover {
     background: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.text_primary};
+    color: ${({ theme }) => theme.white};
   }
 `;
 
