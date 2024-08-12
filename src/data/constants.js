@@ -9,7 +9,7 @@ export const Bio = {
   description:
     "A skilled Frontend developer with a solid foundation in web technologies and a dedication to continuous learnind",
   github: "https://github.com/AnzalnaKainat",
-  resume: "https://docs.google.com/document/d/1PDounyTepcPhnknTx0l_pjjH8kozljJ__h_5ZMlb5m8/edit",
+  resume: "https://drive.google.com/file/d/1iXei4ETGu4N3vObwq7pezZUtBHMX1cE_/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/anzalna-kainat-4973922b5/",
 };
 
