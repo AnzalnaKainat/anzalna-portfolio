@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Card = styled.div`
   width: 330px;
-  height: 490px;
+  height: 420px;
   cursor: pointer;
   border-radius: 10px;
   background-color: ${({ theme }) => theme.bg};
@@ -23,10 +23,10 @@ const Card = styled.div`
 `;
 const Image = styled.img`
   width: 100%;
-  height: 180px;
+  height: 140px;
   background-color: ${({ theme }) => theme.white};
   border-radius: 10px;
- box-shadow: rgba(23, 92, 230, 0.15) 0px 2px 4px;
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 2px 4px;
 `;
 const Tags = styled.div`
   width: 100%;

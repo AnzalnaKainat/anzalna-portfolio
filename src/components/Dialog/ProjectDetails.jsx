@@ -160,21 +160,13 @@ const Button = styled.a`
   padding: 12px 16px;
   border-radius: 8px;
   background-color: ${({ theme }) => theme.primary};
-  ${({ dull, theme }) =>
-    dull &&
-    `
-        background-color: ${theme.bg};
-        border: 1px solid ${theme.primary};
-        color: ${theme.text_secondary};
-        &:hover {
-            background-color: ${({ theme }) => theme.primary };
-        }
-    `}
   cursor: pointer;
   text-decoration: none;
   transition: all 0.5s ease;
   &:hover {
-    background-color: ${({ theme }) => theme.primary + 99};
+    border: 2px solid ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.primary};
   }
   @media only screen and (max-width: 600px) {
     font-size: 12px;
@@ -236,9 +228,9 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
             </> 
            )} */}
           <ButtonGroup>
-            <Button dull href={project?.github} target="new">
+            {/* <Button dull href={project?.github} target="new">
               View Code
-            </Button>
+            </Button> */}
             <Button href={project?.webapp} target="new">
               View Live App
             </Button>

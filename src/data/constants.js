@@ -152,7 +152,6 @@ export const projects = [
       "Material UI",
       "Rapid API"
     ],
-    github: "https://github.com/AnzalnaKainat/youtube-clone.git",
     webapp: "https://youtube-clone-delta-navy.vercel.app",
   },
   {
@@ -168,7 +167,6 @@ export const projects = [
       "Chakra UI",
       "Rapid API"
     ],
-    github: "https://github.com/AnzalnaKainat/real-estate-app.git",
     webapp: "https://real-estate-app-seven-inky.vercel.app",
   },
   {
@@ -183,7 +181,6 @@ export const projects = [
       "HTML",
       "CSS"
     ],
-    github: "https://github.com/AnzalnaKainat/Little-Lemon.git",
     webapp: "https://little-lemon-ten-olive.vercel.app/",
   },
   {
@@ -198,7 +195,6 @@ export const projects = [
       "Chakra UI",
       "Framer Motion"
     ],
-    github: "https://github.com/AnzalnaKainat/landing-page.git",
     webapp: "https://software-landing-page-ten.vercel.app/",
   },
   {
@@ -213,7 +209,6 @@ export const projects = [
       "HTML",
       "CSS"
     ],
-    github: "https://github.com/AnzalnaKainat/Online-learning-platform-website.git",
     webapp: "https://online-learning-platform-website-pir9yexjy.vercel.app/",
   },
   {
@@ -228,7 +223,6 @@ export const projects = [
       "HTML",
       "CSS"
     ],
-    github: "https://github.com/AnzalnaKainat/Restaurant-reservation-website.git",
     webapp: "https://restaurant-reservation-website-orpin.vercel.app/",
   },
   // {
