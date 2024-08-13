@@ -244,7 +244,7 @@ export const projects = [
       "CSS"
     ],
     category: "vanilla js",
-    webapp: "https://restaurant-reservation-website-orpin.vercel.app/",
+    webapp: "https://fitness-gym-project.vercel.app/",
   },
   // {
   //   id: 0,
