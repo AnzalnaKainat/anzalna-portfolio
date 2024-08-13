@@ -19,6 +19,9 @@ const Nav = styled.div`
 const ColorText = styled.div`
   color: ${({ theme }) => theme.primary};
   font-size: 32px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 const NavbarContainer = styled.div`
@@ -39,6 +42,9 @@ const NavLogo = styled(LinkR)`
   font-size: 18px;
   text-decoration: none;
   color: #008080;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 const NavItems = styled.ul`
@@ -81,6 +87,7 @@ const ButtonContainer = styled.div`
 const GithubButton = styled.a`
   border: 1px solid ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.primary};
+  background: ${({ theme }) => theme.bg};
   justify-content: center;
   display: flex;
   align-items: center;

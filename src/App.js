@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import Hero from "./components/sections/Hero";
 import Skills from "./components/sections/Skills";
-import StarCanvas from "./components/canvas/Stars";
+// import StarCanvas from "./components/canvas/Stars";
 import { AnimatePresence } from "framer-motion";
 import Projects from "./components/sections/Projects";
 import Footer from "./components/sections/Footer";
@@ -26,7 +26,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Body>
-          <StarCanvas />
+          {/* <StarCanvas /> */}
           <AnimatePresence>
             <div>
               <Hero />

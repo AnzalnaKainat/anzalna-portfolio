@@ -34,28 +34,19 @@ const Wrapper = styled.div`
 const Title = styled.div`
   font-size: 28px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.black};
   margin: 8px 6px 0px 6px;
   @media only screen and (max-width: 600px) {
-    font-size: 24px;
+    font-size: 18px;
     margin: 6px 6px 0px 6px;
   }
 `;
 
-const Date = styled.div`
-  font-size: 16px;
-  margin: 2px 6px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary};
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
 
 const Desc = styled.div`
   font-size: 16px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.black + 99};
   margin: 8px 6px;
   @media only screen and (max-width: 600px) {
     font-size: 14px;
@@ -67,7 +58,7 @@ const Image = styled.img`
   width: 100%;
   object-fit: cover;
   border-radius: 12px;
-  margin-top: 30px;
+  margin: 30px auto;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 `;
 
@@ -193,7 +184,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
           />
           <Image src={project?.image} />
           <Title>{project?.title}</Title>
-          <Date>{project.date}</Date>
+          
           <Tags>
             {project?.tags.map((tag) => (
               <Tag>{tag}</Tag>

@@ -8,7 +8,7 @@ import { FaLocationArrow } from "react-icons/fa";
 const FooterContainer = styled.div`
   width: 100%;
   padding: 2rem 0;
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,20 +33,24 @@ const FooterWrapper = styled.div`
     
   h1 {
     font-size: 45px; 
-    padding: 0rem 7rem;
-    margin-bottom: 2rem; 
+    // margin: 2rem; 
+    width: 50%;
+    color: ${({ theme }) => theme.black};
+    @media (max-width: 768px) {
+      font-size: 30px;
+      width: 70%;
+    }
   }
 
   div {
     font-size: 18px; 
-    margin-bottom: 2rem; 
+    width: 50%;
+    color: ${({ theme }) => theme.black + 99};
+    @media (max-width: 768px) {
+      font-size: 14px;
+      width: 70%;
+    }
   }
-`;
-
-const Logo = styled.div`
-  font-weight: 600;
-  font-size: 20px;
-  color: ${({ theme }) => theme.primary};
 `;
 
 const Nav = styled.nav`
@@ -114,24 +118,24 @@ const EmailButton = styled.a`
   max-width: 300px;
   text-align: center;
   padding: 16px 0;
-
-  background: #008080;
-  background: linear-gradient(225deg, #008080, #f5f5dc);
+  margin-top: 2rem;
+  background: ${({ theme }) => theme.text_primary};
   border-radius: 50px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 
   &:hover {
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 960px) {
     padding: 12px 0;
-    font-size: 18px;
+    font-size: 14px;
+    // margin-top: 2rem;
   }
 
-  color: white;
+  color: ${({ theme }) => theme.white};
 `;
 
 const Footer = () => {
@@ -152,7 +156,7 @@ const Footer = () => {
       </FooterWrapper>
 
       <FooterWrapper>
-        <Logo>Anzalna Kainat</Logo>
+
         <Nav>
           <NavLink href="#About">About</NavLink>
           <NavLink href="#Skills">Skills</NavLink>

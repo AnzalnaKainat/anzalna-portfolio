@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const Card = styled.div`
-  width: 330px;
+  width: 300px;
   height: 420px;
   cursor: pointer;
   border-radius: 10px;
-  background-color: ${({ theme }) => theme.bg};
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  background-color: ${({ theme }) => theme.card};
+  border: 1px solid rgba(0, 128, 128, 0.125);
+  // box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   overflow: hidden;
   padding: 26px 20px;
   display: flex;
@@ -18,7 +18,10 @@ const Card = styled.div`
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 50px 4px rgba(133, 214, 214, 0.2);
-    // filter: brightness(1.1);
+  }
+
+  @media (max-width: 500px) {
+    margin: 10px;
   }
 `;
 const Image = styled.img`
@@ -54,7 +57,7 @@ const Details = styled.div`
 const Title = styled.div`
   font-size: 20px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.black};
   overflow: hidden;
   display: -webkit-box;
   max-width: 100%;
@@ -62,19 +65,22 @@ const Title = styled.div`
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-`;
-const Date = styled.div`
-  font-size: 12px;
-  margin-left: 2px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 80};
-  @media only screen and (max-width: 768px) {
-    font-size: 10px;
+  @media (max-width: 768px) {
+    font-size: 18px;
   }
 `;
+// const Date = styled.div`
+//   font-size: 12px;
+//   margin-left: 2px;
+//   font-weight: 400;
+//   color: ${({ theme }) => theme.text_secondary + 80};
+//   @media only screen and (max-width: 768px) {
+//     font-size: 10px;
+//   }
+// `;
 const Description = styled.div`
   font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 99};
+  color: ${({ theme }) => theme.black + 99};
   overflow: hidden;
   margin-top: 8px;
   display: -webkit-box;
@@ -82,6 +88,9 @@ const Description = styled.div`
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 // const Members = styled.div`
 //   display: flex;
@@ -115,7 +124,7 @@ const ProjectCard = ({ project, setOpenModal }) => {
       </Tags>
       <Details>
         <Title>{project.title}</Title>
-        <Date>{project.date}</Date>
+        {/* <Date>{project.date}</Date> */}
         <Description>{project.description}</Description>
       </Details>
       {/* <Members>

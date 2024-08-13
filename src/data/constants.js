@@ -1,9 +1,9 @@
 export const Bio = {
   name: "Anzalna Kainat",
   roles: [
-    "Frontend Developer",
-    "React.js Developer",
-    "Next.js Developer",
+    "FRONT-END DEVELOPER",
+    "REACT JS",
+    "NEXT JS",
     // "UI/UX Designer", 
   ],
   description:
@@ -152,6 +152,7 @@ export const projects = [
       "Material UI",
       "Rapid API"
     ],
+    category: "react js",
     webapp: "https://youtube-clone-delta-navy.vercel.app",
   },
   {
@@ -167,6 +168,7 @@ export const projects = [
       "Chakra UI",
       "Rapid API"
     ],
+    category: "next js",
     webapp: "https://real-estate-app-seven-inky.vercel.app",
   },
   {
@@ -181,6 +183,7 @@ export const projects = [
       "HTML",
       "CSS"
     ],
+    category: "react js",
     webapp: "https://little-lemon-ten-olive.vercel.app/",
   },
   {
@@ -195,6 +198,7 @@ export const projects = [
       "Chakra UI",
       "Framer Motion"
     ],
+    category: "react js",
     webapp: "https://software-landing-page-ten.vercel.app/",
   },
   {
@@ -209,13 +213,14 @@ export const projects = [
       "HTML",
       "CSS"
     ],
-    webapp: "https://online-learning-platform-website-pir9yexjy.vercel.app/",
+    category: "vanilla js",
+    webapp: "https://learning-platform-website-green.vercel.app/",
   },
   {
     id: 6,
     title: "Restaurant Reservation Webite",
     description:
-      "Effortlessly reserve tables, order in your language, and pre-select meals with EatTrek. Perfect for busy",
+      "Effortlessly reserve tables, order in your language, and pre-select meals with EatTrek. Perfect for busy individuals who want to streamline their dining experience and avoid waiting in lines, EatTrek is designed to make dining out more convenient and personalized.",
     image:
     require("./assets/restaurant.png"),
     tags: [
@@ -223,6 +228,22 @@ export const projects = [
       "HTML",
       "CSS"
     ],
+    category: "vanilla js",
+    webapp: "https://restaurant-reservation-website-orpin.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "Fitness Website",
+    description:
+      "FitBoost is a dynamic fitness platform made to elevate workout experiences by offering personalized plans, nutritionist recipes, and progress tracking tools. The site combines a modern, responsive design with user-friendly navigation to promote an active and healthier lifestyle.",
+    image:
+    require("./assets/fitness.png"),
+    tags: [
+      "Javascript",
+      "HTML",
+      "CSS"
+    ],
+    category: "vanilla js",
     webapp: "https://restaurant-reservation-website-orpin.vercel.app/",
   },
   // {

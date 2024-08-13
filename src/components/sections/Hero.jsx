@@ -30,29 +30,28 @@ const HeroContainer = styled.div`
 
 const Title = styled.div`
   font-weight: 700;
-  font-size: 45px;
-  color: ${({ theme }) => theme.text_primary};
+  font-size: 50px;
+  color: ${({ theme }) => theme.black};
   line-height: 68px;
-  margin-bottom: 8px;
 
   @media (max-width: 960px) {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 48px;
   }
 `;
 
 const TextLoop = styled.div`
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   gap: 12px;
   justify-content: center;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 
   @media (max-width: 960px) {
-    font-size: 22px;
+    font-size: 10px;
     line-height: 48px;
   }
 `;
@@ -65,13 +64,17 @@ const Span = styled.div`
 const SubTitle = styled.div`
   font-size: 18px;
   line-height: 32px;
-  margin: 3rem 0;
-  padding: 0px 40px;
-  color: ${({ theme }) => theme.text_primary};
+  margin: 1rem auto;
+  // text-align: center;
+  // justify-content: center;
+  width: 50%;
+  
+  color: ${({ theme }) => theme.black + 99};
 
   @media (max-width: 960px) {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 32px;
+    width: 80%;
   }
 `;
 
@@ -85,24 +88,24 @@ const ResumeButton = styled.a`
   max-width: 300px;
   text-align: center;
   padding: 16px 0;
-
+  margin-top: 8px;
   background: ${({ theme }) => theme.text_primary};
-  background: linear-gradient(225deg, #008080, #f5f5dc);
   border-radius: 50px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 
   &:hover {
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 960px) {
+    width: 70%;
     padding: 12px 0;
-    font-size: 18px;
+    font-size: 14px;
   }
 
-  color: white;
+  color: ${({ theme }) => theme.white};
 `;
 
 const Hero = () => {

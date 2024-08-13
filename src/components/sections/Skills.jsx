@@ -34,42 +34,57 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 52px;
+  font-size: 50px;
   text-align: center;
   font-weight: 600;
   margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.black};
   @media (max-width: 768px) {
     margin-top: 12px;
-    font-size: 32px;
+    font-size: 30px;
   }
 `;
 
 const Desc = styled.div`
   font-size: 18px;
+  width: 50%;
   text-align: center;
   margin-bottom: 40px;
-  // font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.black + 99};
+
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 14px;
+    width: 70%; 
   }
 `;
+
+// const SkillsContainer = styled.div`
+//   width: 100%;
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-top: 20px;
+//   gap: 50px;
+//   justify-content: center;
+// `;
 
 const SkillsContainer = styled.div`
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; 
+  align-items: center; 
   margin-top: 20px;
-  gap: 50px;
+  gap: 50px; 
   justify-content: center;
+
 `;
+
+
 const Skill = styled.div`
   width: 100%;
-  max-width: 500px;
-  background-color: ${({ theme }) => theme.bg};
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  max-width: 600px;
+  background-color: ${({ theme }) => theme.card};
+  border: 1px solid rgba(0,128,128, 0.120);
+  // box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   border-radius: 16px;
   padding: 18px 36px;
 
@@ -89,7 +104,11 @@ const SkillTitle = styled.div`
   font-weight: 600;
   margin-bottom: 20px;
   text-align: center;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.black};
+  @media (max-width: 768px) {
+    // margin-top: 12px;
+    font-size: 20px;
+  }
 `;
 
 const SkillList = styled.div`
