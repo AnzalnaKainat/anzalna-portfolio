@@ -201,23 +201,23 @@ export const projects = [
     category: "react js",
     webapp: "https://software-landing-page-ten.vercel.app/",
   },
+  // {
+  //   id: 5,
+  //   title: "Online Learning Platform",
+  //   description:
+  //     "Advance your career with high-quality courses and resources from Virtual Scholars. Our scholarships remove financial barriers, making education accessible to all",
+  //   image:
+  //   require("./assets/olp.png"),
+  //   tags: [
+  //     "Javascript",
+  //     "HTML",
+  //     "CSS"
+  //   ],
+  //   category: "vanilla js",
+  //   webapp: "https://learning-platform-website-green.vercel.app/",
+  // },
   {
     id: 5,
-    title: "Online Learning Platform",
-    description:
-      "Advance your career with high-quality courses and resources from Virtual Scholars. Our scholarships remove financial barriers, making education accessible to all",
-    image:
-    require("./assets/olp.png"),
-    tags: [
-      "Javascript",
-      "HTML",
-      "CSS"
-    ],
-    category: "vanilla js",
-    webapp: "https://learning-platform-website-green.vercel.app/",
-  },
-  {
-    id: 6,
     title: "Restaurant Reservation Webite",
     description:
       "Effortlessly reserve tables, order in your language, and pre-select meals with EatTrek. Perfect for busy individuals who want to streamline their dining experience and avoid waiting in lines, EatTrek is designed to make dining out more convenient and personalized.",
@@ -232,7 +232,7 @@ export const projects = [
     webapp: "https://restaurant-reservation-website-orpin.vercel.app/",
   },
   {
-    id: 7,
+    id: 6,
     title: "Fitness Website",
     description:
       "FitBoost is a dynamic fitness platform made to elevate workout experiences by offering personalized plans, nutritionist recipes, and progress tracking tools. The site combines a modern, responsive design with user-friendly navigation to promote an active and healthier lifestyle.",
