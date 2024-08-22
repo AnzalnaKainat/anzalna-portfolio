@@ -51,7 +51,7 @@ const TextLoop = styled.div`
   margin-bottom: 5px;
 
   @media (max-width: 960px) {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 48px;
   }
 `;

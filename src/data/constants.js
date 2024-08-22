@@ -171,21 +171,21 @@ export const projects = [
     category: "next js",
     webapp: "https://real-estate-app-seven-inky.vercel.app",
   },
-  // {
-  //   id: 3,
-  //   title: "Little Lemon - Restaurant Reservation",
-  //   description:
-  //     "Reserve your table effortlessly with Little Lemon. Our app offers a smooth online booking experience for a stress-free dining outing.",
-  //   image:
-  //   require("./assets/littlelemon.png"),
-  //   tags: [
-  //     "React Js",
-  //     "HTML",
-  //     "CSS"
-  //   ],
-  //   category: "react js",
-  //   webapp: "https://little-lemon-ten-olive.vercel.app/",
-  // },
+  {
+    id: 3,
+    title: "Animation Website Inspired by Ochi Design",
+    description:
+      "Explore my animation website, crafted with React.js and inspired by the elegant Ochi design. Featuring dynamic animations with Framer Motion, smooth scroll effects using Locomotion, and a modern Tailwind CSS style for a fresh, engaging experience.",
+    image:
+    require("./assets/ochiAnimated.png"),
+    tags: [
+      "React Js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    category: "react js",
+    webapp: "https://animation-website-theta.vercel.app/",
+  },
   {
     id: 4,
     title: "Software Landing Page",
