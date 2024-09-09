@@ -122,8 +122,7 @@ const Projects = ({ openModal, setOpenModal }) => {
       <Wrapper>
         <Title>Projects</Title>
         <Desc>
-        Explore a collection of my projects showcasing my skills in frontend development.
-        They reflect my approach to building practical and user-friendly web applications.
+        Explore a collection of my projects showcasing my skills in both frontend and full-stack development.
         </Desc>
         <ToggleButtonGroup>
           <ToggleButton

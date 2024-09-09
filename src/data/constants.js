@@ -1,13 +1,13 @@
 export const Bio = {
   name: "Anzalna Kainat",
   roles: [
-    "FUll-STACK DEVELOPER",
+    "FULL-STACK DEVELOPER",
     "SOFTWARE ENGINEER",
     "WEB DEVELOPER",
     // "UI/UX Designer", 
   ],
   description:
-    "A skilled Frontend Developer with a solid foundation in web technologies and a strong understanding of computer science principles, I am dedicated to crafting efficient and user-friendly digital solutions and have a commitment to continuously learning and improving my skills.",
+    "A Full Stack Developer with a passion for creating efficient and user-focused web applications. My solid foundation in computer science drives my enthusiasm for both frontend and backend development. I'm always eager to tackle new challenges and enhance my skills.",
   github: "https://github.com/AnzalnaKainat",
   resume: "",
   linkedin: "https://www.linkedin.com/in/anzalna-kainat-4973922b5/",
