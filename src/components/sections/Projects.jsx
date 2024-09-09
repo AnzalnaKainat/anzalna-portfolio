@@ -130,29 +130,24 @@ const Projects = ({ openModal, setOpenModal }) => {
             active={toggle === "all"}
             onClick={() => setToggle("all")}
           >
-            All Project
+            All Projects
           </ToggleButton>
           
           <ToggleButton
-            active={toggle === "react js"}
-            onClick={() => setToggle("react js")}
+            active={toggle === "front-end"}
+            onClick={() => setToggle("front-end")}
           >
-            React Js
+            Front-End Projects
           </ToggleButton>
        
           <ToggleButton
-            active={toggle === "next js"}
-            onClick={() => setToggle("next js")}
+            active={toggle === "full-stack"}
+            onClick={() => setToggle("full-stack")}
           >
-            Next Js
+            Full-Stack Projects
           </ToggleButton>
         
-          <ToggleButton
-            active={toggle === "vanilla js"}
-            onClick={() => setToggle("vanilla js")}
-          >
-            Vanilla Js
-          </ToggleButton>
+          
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === "all" &&

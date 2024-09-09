@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link as LinkR } from "react-router-dom";
-import styled, { useTheme } from "styled-components";
-import { Bio } from "../data/constants";
+import styled from "styled-components";
 import { MenuRounded } from "@mui/icons-material";
+import { Bio } from "../data/constants";
+import ThemeToggle from "./ThemeToggle"; // Import the ThemeToggle component
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -16,13 +17,6 @@ const Nav = styled.div`
   z-index: 10;
   color: white;
 `;
-const ColorText = styled.div`
-  color: ${({ theme }) => theme.primary};
-  font-size: 32px;
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
-  }
-`;
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -33,6 +27,7 @@ const NavbarContainer = styled.div`
   justify-content: space-between;
   font-size: 1rem;
 `;
+
 const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
@@ -41,7 +36,12 @@ const NavLogo = styled(LinkR)`
   font-weight: 500;
   font-size: 18px;
   text-decoration: none;
-  color: #008080;
+  color: ${({ theme }) => theme.primary};
+`;
+
+const ColorText = styled.div`
+  color: ${({ theme }) => theme.primary};
+  font-size: 32px;
   @media screen and (max-width: 768px) {
     font-size: 16px;
   }
@@ -115,7 +115,6 @@ const MobileIcon = styled.div`
   }
 `;
 
-
 const MobileMenu = styled.ul`
   width: 100%;
   display: flex;
@@ -135,14 +134,13 @@ const MobileMenu = styled.ul`
   transform: ${({ isOpen }) =>
     isOpen ? "translateY(0)" : "translateY(-100%)"};
   border-radius: 0 0 20px 20px;
-  // box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
 `;
 
-const Navbar = () => {
+const Navbar = ({ themeToggler, theme }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const theme = useTheme();
+
   return (
     <Nav>
       <NavbarContainer>
@@ -152,16 +150,18 @@ const Navbar = () => {
           <ColorText>&gt;</ColorText>
         </NavLogo>
 
-        <MobileIcon onClick={() => setIsOpen(!isOpen)}>
-          <MenuRounded style={{ color: "inherit" }} />
-        </MobileIcon>
-
         <NavItems>
           <NavLink href="#About">About</NavLink>
           <NavLink href="#Skills">Skills</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
           <NavLink href="#Footer">Contact</NavLink>
         </NavItems>
+
+        <ThemeToggle themeToggler={themeToggler} theme={theme} /> {/* Add ThemeToggle here */}
+
+        <MobileIcon onClick={() => setIsOpen(!isOpen)}>
+          <MenuRounded style={{ color: "inherit" }} />
+        </MobileIcon>
 
         {isOpen && (
           <MobileMenu isOpen={isOpen}>

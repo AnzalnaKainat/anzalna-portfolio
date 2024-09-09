@@ -1,15 +1,15 @@
 export const Bio = {
   name: "Anzalna Kainat",
   roles: [
-    "FRONT-END DEVELOPER",
-    "REACT JS",
-    "NEXT JS",
+    "FUll-STACK DEVELOPER",
+    "SOFTWARE ENGINEER",
+    "WEB DEVELOPER",
     // "UI/UX Designer", 
   ],
   description:
     "A skilled Frontend Developer with a solid foundation in web technologies and a strong understanding of computer science principles, I am dedicated to crafting efficient and user-friendly digital solutions and have a commitment to continuously learning and improving my skills.",
   github: "https://github.com/AnzalnaKainat",
-  resume: "https://drive.google.com/file/d/1iXei4ETGu4N3vObwq7pezZUtBHMX1cE_/view?usp=sharing",
+  resume: "",
   linkedin: "https://www.linkedin.com/in/anzalna-kainat-4973922b5/",
 };
 
@@ -63,40 +63,40 @@ export const skills = [
       },
     ],
   },
-  // {
-  //   title: "Backend",
-  //   skills: [
-  //     {
-  //       name: "Node Js",
-  //       image: "https://nodejs.org/static/images/logo.svg",
-  //     },
-  //     {
-  //       name: "Graph Ql",
-  //       image: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
-  //     },
-  // 
-  //     {
-  //       name: "Django",
-  //       image:
-  //         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlFFyY16N5NRhzoG24RqB7x8Ok2t8Bdgs-tuMsOBXS2Q&s",
-  //     },
-  //     {
-  //       name: "MySQL",
-  //       image:
-  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-  //     },
-  //     
-  //     {
-  //       name: "MongoDB",
-  //       image:
-  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-  //     },
-  //     {
-  //       name: "Firebase",
-  //       image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
-  //     },
-  //   ],
-  // },
+  {
+    title: "Backend",
+    skills: [
+      {
+        name: "Node Js",
+        image: "https://nodejs.org/static/images/logo.svg",
+      },
+      {
+        name: "Next Js",
+        image:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
+      },
+      {
+        name: "PostgreSQL",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png",
+      },
+      {
+        name: "MySQL",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+      },
+      
+      {
+        name: "MongoDB",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+      },
+      {
+        name: "Firebase",
+        image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+      },
+    ],
+  },
   {
     title: "Others",
     skills: [
@@ -142,6 +142,23 @@ export const skills = [
 export const projects = [
   {
     id: 1,
+    title: "A Full-Stack Blog Application",
+    description:
+      "Explore a tech blog application where users can easily browse posts without logging in. Logged-in users have full control to create, edit, and delete their own content. The platform offers a clean, responsive design and dynamic content management, ensuring a seamless experience. Plus, users can subscribe to the newsletter for updates on the latest posts.",
+    image:
+    require("./assets/blog-app.png"),
+    tags: [
+      "Next Js",
+      "Next Auth",
+      "Typescript",
+      "Prisma & PostgreSQL",
+      "Tailwind CSS",
+    ],
+    category: "full-stack",
+    webapp: "https://nextjs-blog-omega-seven-15.vercel.app/",
+  },
+  {
+    id: 2,
     title: "YouTube Clone Application",
     description:
       "Experience a responsive video platform with our YouTube clone. Discover video sections, custom categories, channel pages, and seamless video playback.",
@@ -149,14 +166,14 @@ export const projects = [
     require("./assets/youtubeclone.png"),
     tags: [
       "React Js",
-      "Material UI",
+      "Tailwind CSS",
       "Rapid API"
     ],
-    category: "react js",
-    webapp: "https://youtube-clone-delta-navy.vercel.app",
+    category: "front-end",
+    webapp: "https://youtube-clone2-six.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Real Estate Application",
     description:
       "Explore rental and for-sale properties with ease using our real estate app. Enjoy advanced filtering options and detailed property pages, complete with an image carousel.",
@@ -168,11 +185,26 @@ export const projects = [
       "Chakra UI",
       "Rapid API"
     ],
-    category: "next js",
-    webapp: "https://real-estate-app-seven-inky.vercel.app",
+    category: "front-end",
+    webapp: "https://real-estate-blond-nu.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
+    title: "Food Ordering Application",
+    description:
+      "The food ordering application offers a seamless experience where users can effortlessly add or remove items from their cart, filter food by category, search for specific items, and adjust quantities to match their needs. Built with React.js, Redux Toolkit, and Tailwind CSS, the platform ensures smooth and dynamic interactions for a streamlined user journey.",
+    image:
+    require("./assets/food-ordering.png"),
+    tags: [
+      "React Js",
+      "Redux ToolKit",
+      "Tailwind CSS"
+    ],
+    category: "front-end",
+    webapp: "https://food-ordering-redux-toolkit.vercel.app/",
+  },
+  {
+    id: 5,
     title: "Animation Website Inspired by Ochi Design",
     description:
       "Explore my animation website, crafted with React.js and inspired by the elegant Ochi design. Featuring dynamic animations with Framer Motion, smooth scroll effects using Locomotion, and a modern Tailwind CSS style for a fresh, engaging experience.",
@@ -183,11 +215,11 @@ export const projects = [
       "Tailwind CSS",
       "Framer Motion"
     ],
-    category: "react js",
+    category: "front-end",
     webapp: "https://animation-website-theta.vercel.app/",
   },
   {
-    id: 4,
+    id: 6,
     title: "Software Landing Page",
     description:
       "This React-based landing page features a sleek design with a vibrant purple theme and a well-organized header. The hero section highlights your software’s core features with an engaging mockup and intuitive navigation links",
@@ -198,11 +230,11 @@ export const projects = [
       "Chakra UI",
       "Framer Motion"
     ],
-    category: "react js",
+    category: "front-end",
     webapp: "https://software-landing-page-ten.vercel.app/",
   },
   {
-    id: 5,
+    id: 7,
     title: "Online Learning Platform",
     description:
       "Advance your career with high-quality courses and resources from Virtual Scholars. Our scholarships remove financial barriers, making education accessible to all",
@@ -213,11 +245,11 @@ export const projects = [
       "HTML",
       "CSS"
     ],
-    category: "vanilla js",
+    category: "front-end",
     webapp: "https://learning-platform-website-green.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Restaurant Reservation Webite",
     description:
       "Effortlessly reserve tables, order in your language, and pre-select meals with EatTrek. Perfect for busy individuals who want to streamline their dining experience and avoid waiting in lines, EatTrek is designed to make dining out more convenient and personalized.",
@@ -228,11 +260,11 @@ export const projects = [
       "HTML",
       "CSS"
     ],
-    category: "vanilla js",
+    category: "front-end",
     webapp: "https://restaurant-reservation-website-orpin.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Fitness Website",
     description:
       "FitBoost is a dynamic fitness platform made to elevate workout experiences by offering personalized plans, nutritionist recipes, and progress tracking tools. The site combines a modern, responsive design with user-friendly navigation to promote an active and healthier lifestyle.",
@@ -243,7 +275,7 @@ export const projects = [
       "HTML",
       "CSS"
     ],
-    category: "vanilla js",
+    category: "front-end",
     webapp: "https://fitness-gym-project.vercel.app/",
   },
   // {
