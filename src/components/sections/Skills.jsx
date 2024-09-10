@@ -83,7 +83,7 @@ const Skill = styled.div`
   width: 100%;
   max-width: 600px;
   background-color: ${({ theme }) => theme.card};
-  border: 1px solid rgba(0,128,128, 0.120);
+  border: 2px solid rgba(0,128,128, 0.2);
   // box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   border-radius: 16px;
   padding: 18px 36px;

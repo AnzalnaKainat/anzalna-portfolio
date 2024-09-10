@@ -107,6 +107,7 @@ const GithubButton = styled.a`
 const MobileIcon = styled.div`
   height: 100%;
   display: flex;
+  margin-top: 10px;
   align-items: center;
   color: ${({ theme }) => theme.text_primary};
   display: none;

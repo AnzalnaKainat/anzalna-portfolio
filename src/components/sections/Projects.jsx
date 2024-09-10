@@ -65,7 +65,7 @@ const Desc = styled.div`
 
 const ToggleButtonGroup = styled.div`
 display: flex;
-border: 1px solid rgba(0, 128, 128, 0.125);
+border: 2px solid rgba(0, 128, 128, 0.2);
 color: ${({ theme }) => theme.primary};
 font-size: 16px;
 border-radius: 50px;

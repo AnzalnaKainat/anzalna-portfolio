@@ -1,5 +1,5 @@
 export const lightTheme = {
-  bg: "#FAF5FF",
+  bg: "#F5F5F5",
   // bgLight: "#1C1E27",
   primary: "#008080",
   text_primary: "#008080",
@@ -9,12 +9,12 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  bg: "#343434",
+  bg: "#050505",
   // bgLight: "#FAF5FF",
   primary: "#008080",
   text_primary: "#008080",
   text_secondary: "#008080",
-  white: "#1C1E27",
+  white: "#FAF5FF",
   black: "#FAF5FF",
 };
 
