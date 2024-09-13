@@ -24,7 +24,7 @@ My Portfolio is a React.js application that serves as an online portfolio to sho
 - HTML5 & CSS3: Markup and styling languages for building web pages.
 - JavaScript: A programming language for adding interactivity to web applications.
 - Style-Components: A CSS framework for creating responsive and mobile-first designs.
-- Git: A version control system for tracking changes and collaborating on projects.
+
 
 
 

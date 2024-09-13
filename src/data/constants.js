@@ -174,20 +174,38 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Real Estate Application",
+    title: "A Collaborative LiveDocs",
     description:
-      "Explore rental and for-sale properties with ease using our real estate app. Enjoy advanced filtering options and detailed property pages, complete with an image carousel.",
+      "Check out my collaborative document editing app, where users can create, share, and manage documents in real-time. It comes with handy features like threaded comments, active collaborator indicators, and notifications to keep everyone in sync. Fully responsive, it's built to make teamwork smooth and simple on any device.",
     image:
-    require("./assets/realestate.png"),
+    require("./assets/liveDocs.png"),
     tags: [
       "Next Js",
-      "React Js",
-      "Chakra UI",
-      "Rapid API"
+      "TypeScript",
+      "Liveblocks",
+      "Lexical Editor",
+      "ShadCN",
+      "Tailwind CSS"
     ],
-    category: "front-end",
-    webapp: "https://real-estate-blond-nu.vercel.app/",
+    category: "full-stack",
+    webapp: "https://collaborative-editor-psi.vercel.app/",
   },
+  // {
+  //   id: 3,
+  //   title: "Real Estate Application",
+  //   description:
+  //     "Explore rental and for-sale properties with ease using our real estate app. Enjoy advanced filtering options and detailed property pages, complete with an image carousel.",
+  //   image:
+  //   require("./assets/realestate.png"),
+  //   tags: [
+  //     "Next Js",
+  //     "React Js",
+  //     "Chakra UI",
+  //     "Rapid API"
+  //   ],
+  //   category: "front-end",
+  //   webapp: "https://real-estate-blond-nu.vercel.app/",
+  // },
   {
     id: 4,
     title: "Food Ordering Application",

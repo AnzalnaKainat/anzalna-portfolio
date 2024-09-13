@@ -24,6 +24,7 @@ const Wrapper = styled.div`
   margin: 50px 12px;
   height: min-content;
   background-color: ${({ theme }) => theme.bg};
+  border: 1px solid rgba(0, 128, 128, 0.2);
   color: ${({ theme }) => theme.text_primary};
   padding: 20px;
   display: flex;

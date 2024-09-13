@@ -124,7 +124,6 @@ const MobileMenu = styled.ul`
   gap: 16px;
   padding: 0 6px;
   list-style: none;
-  width: 100%;
   padding: 12px 40px 24px 40px;
   background: ${({ theme }) => theme.bg};
   position: absolute;
