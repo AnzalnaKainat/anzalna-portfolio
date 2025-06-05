@@ -9,7 +9,7 @@ export const Bio = {
   description:
     "A Full Stack Developer with a passion for creating efficient and user-focused web applications. My solid foundation in computer science drives my enthusiasm for both frontend and backend development. I'm always eager to tackle new challenges and enhance my skills.",
   github: "https://github.com/AnzalnaKainat",
-  resume: "",
+  resume: "https://docs.google.com/document/d/1SnNu-vNzAaTPYEZXYTL8Oz_Eap6p3XPyR7m9AWlZQL0/edit?pli=1&tab=t.0",
   linkedin: "https://www.linkedin.com/in/anzalna-kainat-4973922b5/",
 };
 
